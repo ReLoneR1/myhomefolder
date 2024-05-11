@@ -1,2 +1,2 @@
-# mydotfiles
-test commit
+# myhomefolder
+мой гит репозиторий для хранения важных для меня файлов из /home
