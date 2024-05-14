@@ -9,6 +9,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="robbyrussell"
+#ZSH_THEME="random"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -41,7 +42,7 @@ ZSH_THEME="robbyrussell"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # You can also set it to another string to have that shown instead of the default red dots.
@@ -106,11 +107,16 @@ alias vim="nvim"
 alias dup="sudo zypper dup"
 alias ezrc="nvim ~/.zshrc"
 alias r="ranger"
+alias cnew="cargo new"
+alias crun="cargo run"
+alias rs="nvim src/main.rs"
 
 # Enable things
 eval "$(zoxide init zsh)"
 eval "$(atuin init zsh)"
 
 # prompt
-PROMPT="%{$fg_bold[cyan]%}%n%{$fg[blue]%}@%{$fg_bold[green]%}%m"
-PROMPT+=' %{$fg[cyan]%}%~%{$reset_color%} '
+PROMPT="%{$fg[green]%}["
+PROMPT+="%{$fg_bold[cyan]%}%n%{$fg[blue]%}@%{$fg_bold[green]%}%m"
+PROMPT+="%{$fg[green]%}]"
+PROMPT+=" %{$fg[cyan]%}%~%{$reset_color%} "
