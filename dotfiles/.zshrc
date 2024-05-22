@@ -8,8 +8,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
-#ZSH_THEME="random"
+#ZSH_THEME="robbyrussell"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -73,6 +72,7 @@ ENABLE_CORRECTION="true"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git you-should-use zsh-autosuggestions zsh-syntax-highlighting)
 
+fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -110,13 +110,14 @@ alias r="ranger"
 alias cnew="cargo new"
 alias crun="cargo run"
 alias rs="nvim src/main.rs"
+alias wow="nvim ~/Документы/wow/wow.norg"
 
 # Enable things
 eval "$(zoxide init zsh)"
 eval "$(atuin init zsh)"
 
 # prompt
-PROMPT="%{$fg[green]%}["
-PROMPT+="%{$fg_bold[cyan]%}%n%{$fg[blue]%}@%{$fg_bold[green]%}%m"
-PROMPT+="%{$fg[green]%}]"
-PROMPT+=" %{$fg[cyan]%}%~%{$reset_color%} "
+PROMPT="%{$fg_bold[magenta]%}["
+PROMPT+="%{$fg_bold[green]%}%n%{$fg_bold[blue]%}@%{$fg_bold[magenta]%}%m"
+PROMPT+="%{$fg_bold[magenta]%}]"
+PROMPT+=" %{$fg_bold[green]%}%~%{$reset_color%} "
