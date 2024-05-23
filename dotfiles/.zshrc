@@ -32,7 +32,10 @@ alias xin="sudo xbps-install -S"
 alias xqu="xbps-query -Rs"
 alias xre="sudo xbps-remove -R"
 # xbps-src alias
-
+alias xsus='./xbps-src update-sys'
+alias xins='./xbps-src pkg'
+# xdeb alias
+alias xind='./xdeb -Sedf'
 
 # Enable utils
 eval "$(zoxide init zsh)"
