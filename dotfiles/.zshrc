@@ -25,17 +25,13 @@ alias ll="eza -a --icons"
 alias vim="nvim"
 alias ezrc="nvim ~/.zshrc"
 alias r="ranger"
-alias wow="nvim ~/Documents/wow/wow.norg"
-# xbps alias
-alias xsu="sudo xbps-install -Su"
-alias xin="sudo xbps-install -S"
-alias xqu="xbps-query -Rs"
-alias xre="sudo xbps-remove -R"
-# xbps-src alias
-alias xsus='./xbps-src update-sys'
-alias xins='./xbps-src pkg'
-# xdeb alias
-alias xind='./xdeb -Sedf'
+alias wow="nvim ~/Документы/wow/wow.norg"
+alias neo="fastfetch"
+# zypper alias
+alias dup="sudo zypper dup"
+alias zin="sudo zypper in"
+alias zse="zypper se"
+alias zrm="sudo zypper rm -u"
 
 # Enable utils
 eval "$(zoxide init zsh)"
