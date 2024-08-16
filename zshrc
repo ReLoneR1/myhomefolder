@@ -14,6 +14,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Variables
 export EDITOR='nvim'
+export TERMINAL='tilix'
 
 # Common alias
 alias l="eza --icons"
@@ -22,6 +23,13 @@ alias vim="nvim"
 alias ezrc="nvim ~/.zshrc"
 alias r="ranger"
 alias neo="fastfetch"
+# Zypper alias
+alias dup="sudo zypper dup"
+alias zin="sudo zypper in"
+alias zse="zypper se"
+alias zrm="sudo zypper rm -u"
+alias zrf="sudo zypper refresh"
+alias zlr="zypper lr"
 
 # Enable utils
 eval "$(zoxide init zsh)"
