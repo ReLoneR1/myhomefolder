@@ -23,13 +23,10 @@ alias vim="nvim"
 alias ezrc="nvim ~/.zshrc"
 alias r="ranger"
 alias neo="fastfetch"
-# Zypper alias
-alias dup="sudo zypper dup"
-alias zin="sudo zypper in"
-alias zse="zypper se"
-alias zrm="sudo zypper rm -u"
-alias zrf="sudo zypper refresh"
-alias zlr="zypper lr"
+# vpn alias
+alias vpnc="adguardvpn-cli connect"
+alias vpns="adguardvpn-cli status"
+alias vpnd="adguardvpn-cli disconnect"
 
 # Enable utils
 eval "$(zoxide init zsh)"
