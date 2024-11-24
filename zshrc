@@ -19,18 +19,29 @@ export TERMINAL='tilix'
 # Common alias
 alias l="eza --icons"
 alias ll="eza -a --icons"
-alias vim="nvim"
+alias vim="nvim "
 alias ezrc="nvim ~/.zshrc"
 alias r="ranger"
 alias neo="fastfetch"
-# vpn alias
-alias vpnc="adguardvpn-cli connect"
+# Opensuse alias
+alias dup="sudo zypper dup"
+alias zin="sudo zypper in"
+alias zse="zypper se"
+alias zrm="sudo zypper rm -u"
+alias zlr="zypper lr"
+alias zrf="sudo zypper refresh"
+# Vpn alias
+alias vpnc="systemctl stop zapret && adguardvpn-cli connect"
+alias vpnd="adguardvpn-cli disconnect && systemctl start zapret"
+alias vpnl="adguardvpn-cli list-locations"
 alias vpns="adguardvpn-cli status"
-alias vpnd="adguardvpn-cli disconnect"
+# Zapret alias
+alias ssz="systemctl status zapret"
 
-# Enable utils
+# Enable utils and completions
 eval "$(zoxide init zsh)"
 eval "$(atuin init zsh)"
+[ -s "/opt/adguardvpn_cli/bash-completion.sh" ] && \. "/opt/adguardvpn_cli/bash-completion.sh"
 
 # Prompt
 PROMPT="%{$fg_bold[blue]%}["
