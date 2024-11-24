@@ -31,7 +31,7 @@ alias zrm="sudo zypper rm -u"
 alias zlr="zypper lr"
 alias zrf="sudo zypper refresh"
 # Vpn alias
-alias vpnc="systemctl stop zapret && adguardvpn-cli connect"
+alias vpnc="systemctl stop zapret && adguardvpn-cli connect -f"
 alias vpnd="adguardvpn-cli disconnect && systemctl start zapret"
 alias vpnl="adguardvpn-cli list-locations"
 alias vpns="adguardvpn-cli status"
