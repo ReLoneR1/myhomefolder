@@ -37,6 +37,8 @@ alias vpnl="adguardvpn-cli list-locations"
 alias vpns="adguardvpn-cli status"
 # Zapret alias
 alias ssz="systemctl status zapret"
+alias sez="systemctl start zapret"
+alias sdz="systemctl stop zapret"
 
 # Enable utils and completions
 eval "$(zoxide init zsh)"
